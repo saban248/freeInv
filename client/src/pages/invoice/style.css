@@ -1,0 +1,273 @@
+.main-invoice{
+  display: flex;
+  flex-direction: column;
+  gap:1em;
+}
+
+.invoice-header{
+  direction: rtl;
+  display: flex;
+  font-size: 1.75em;
+  padding: .75em;
+}
+.invoice-title{
+  flex:1;
+  text-align: center;
+}
+.invoice-header>.icon{
+  color: #582ba5;
+  font-size: 2em;
+}
+
+.detail-box {
+  border-radius: 7px;
+  padding: .75em;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 18px #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  gap: 1.2em;
+}
+
+.detail-box-header, .detail-box-header > .title{
+  display: flex;
+  padding: 10px;
+  background: #ebebf5;
+  align-items:  center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.detail-box-header > .title{
+  font-size: 1.5em;
+  justify-content: start;
+}
+.detail-box-header > .title > .icon{
+  font-size: 1.3em;
+}
+.detail-box-header > .options > .icon{
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.detail-box-header > .options > .icon:hover{
+  background: #e2d3ff;
+}
+.main-detail-box{
+  border: 1px rgba(163, 162, 167, 0.696) solid;
+  
+}
+
+.invoice-body{
+  padding: 7px;
+  display: grid;
+  grid-template-columns: auto 2fr;
+  column-gap: 1.75em;
+  row-gap: 1.75em;
+  align-items: center;
+}
+.invoice-body > .level{
+  position: relative;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 50%;
+  background: rgb(240, 243, 255);
+  color: #281449;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  border: 1px solid #2814494f;
+  box-shadow: 0 0 11px #f7f3ff;
+}
+.level-complete{
+  color: rgb(95, 71, 201) ;
+  padding: 4px 0;
+  transform: scale(1.3);
+  /*
+  border: 1px solid rgb(98, 170, 218) !important;
+  background: #f3f3f3 !important;
+  box-shadow: 0 0 15px 0px rgba(162, 204, 231, 0.541) !important; */
+}
+
+
+.invoice-body > .level-content{
+  display: grid;
+  grid-template-columns:  auto 2fr;
+  align-items: center;
+  column-gap: 20px;
+}
+
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+}
+.input-label{
+  font-size: 1.0em;
+  padding: 5px;
+  color: rgb(63, 63, 63);
+}
+
+.input-label > .require{
+  color: red;
+}
+
+.invoice-input {
+  border:none;
+  outline: none;
+  min-width: 250px;
+  padding: 10px;
+  border-bottom: 1px  solid rgb(197, 188, 211);
+}
+
+.invoice-input:focus {
+  border: 1px solid rgb(195, 188, 209);
+  border-radius: 7px;
+  box-shadow: 0 0 11px #e3e0e9
+}
+
+
+.btn-input-options{
+  display: flex;
+  flex-direction: column;
+}
+.btn-input-header{
+  padding: 10px;
+  font-size: 14px;
+  color: rgb(103, 103, 103);
+  transform: skewX(-10deg);
+}
+.btn-input-body{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon-lock {
+  padding: 10px 12px;
+  color: rgb(74, 51, 113);
+  font-size: 15px;
+  background: #e7daff;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: 200ms;
+  
+}
+.icon-lock:hover, .icon-lock:active{
+  box-shadow: 0 0 11px #a2a2a2;
+}
+.icon-lock-out{
+  color: rgb(31, 31, 31);
+  background:rgb(214, 47, 83);
+}
+
+.icon-tax{
+  color: #582ba5;
+}
+
+.invoice-button {
+  padding: 10px;
+  border: 1px solid #2814494f;
+    transform: skewX(-2deg);
+  border-radius: 1em;
+  color: rgb(47, 48, 77);
+  padding-left: 1em;
+  padding-right: 1em;
+  cursor: pointer;
+  width: fit-content;
+  background: rgb(239, 241, 255);;
+  transition: 200ms;
+}
+
+.invoice-button:hover:active {
+  background: rgb(85, 64, 121);
+  color: white;
+  transform:  scaleX(1.2);;
+}
+
+
+.about-lock{
+  font-size: 10px;
+  color: gray;
+
+}
+.dateInput,
+.mhmInput {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: stretch;
+  justify-content: start;
+}
+
+.invoice-input[type="checkbox"] {
+  width: auto;
+}
+
+
+.field-title {
+  width: fit-content;
+  word-break: keep-all;
+  white-space: nowrap;
+  font-weight: 600;
+  width: 7%;
+}
+
+.invoice-field {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1em;
+  padding: 0.5em;
+}
+
+.invoice-area {
+  border-color: rgb(144, 84, 248);
+  border-radius: 1em 1em 1em 0;
+}
+
+.outline {
+  background-color: transparent !important;
+  border: 2px solid rgb(164, 115, 248) !important;
+  color: rgb(164, 115, 248) !important;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: right;
+}
+
+table {
+  border-top: 2px solid gray;
+}
+
+tr {
+  border-bottom: 1px solid gray;
+}
+
+.no-border {
+  border: none !important;
+}
+.no-items {
+  text-align: center !important;
+}
+.total{
+  color:rgb(144, 84, 248)
+}

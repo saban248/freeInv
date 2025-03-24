@@ -1,0 +1,49 @@
+
+
+.box-invoice{
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #35353522;
+    min-width: 350px;
+}
+.box-invoice:hover{
+    box-shadow: 0 0 10px #d7d7d7;
+}
+
+
+.box-invoice>.header{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(31, 31, 31);
+    font-weight: lighter;
+    border-bottom: 1px solid #dde5f0;
+    padding: 10px;
+}
+.box-invoice>.header>.name{
+    font-size: 1.2rem;
+}
+.box-invoice>.header>.icon{
+    font-size: 1.5rem;
+    transition: 200ms;
+    cursor: pointer;
+
+}
+.box-invoice>.header>.icon:hover, .box-invoice>.header>.icon:active{ 
+    transform: scale(1.4) rotate(90deg);
+    color: #B78E12;
+}
+.box-invoice>.body{
+    margin-top: 20px;
+}
+.box-invoice>.body>.description{
+    color: rgb(87, 87, 87);
+    font-size: .80rem;
+}
+
+@media (max-width: 768px) {
+    .box-invoice{
+        justify-content: center;
+        min-width: 90%;
+    }
+    
+}

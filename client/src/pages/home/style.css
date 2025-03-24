@@ -1,0 +1,33 @@
+
+
+.invoice-options {
+    box-shadow: 0 0 10px 10px #f2f3fd;
+    border-radius: 7px;
+    direction: rtl;
+    padding: 10px;
+}
+
+.invoice-options>  .title{
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.list-options{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    margin-top: 50px;
+    gap:15px;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px) {
+    .list-options{
+        justify-content: center;
+    }
+}

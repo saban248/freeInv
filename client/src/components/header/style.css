@@ -1,0 +1,89 @@
+
+.header-main{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name-company{
+    color: black;
+    font-weight: bold;
+    direction: ltr;
+    font-size: 2rem;
+}
+
+.name-company > .second{
+    color: #B78E12;
+
+}
+.header-main > .box{
+    display: flex;
+    gap: 10px;
+    direction: rtl;
+    align-items:center;
+    padding: 10px;
+}
+.header-menu-button{
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+    background: white;
+    color: #1a3962;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 1px solid #1a3962;
+    transition: all 200ms;
+}
+
+.header-menu-button:hover{
+    background: #1a3962;
+    color: white;
+    box-shadow: 0 0 1px 4px #1a3962;
+    border: 1px solid #1a3962;
+}
+
+.header-menu{
+    align-items: center !important;
+    gap:30px !important; /* override .box */
+}
+
+.header-menu > .item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: border 100ms;
+}
+.header-menu > .item > .name:hover{
+    border-bottom: 2px solid #1a396298;
+}
+.header-menu > .item > .icon{
+    font-size: 1rem;
+    border-radius: 50%;
+    padding: 10px;
+    background: #d1e1ff;
+    border: 1px solid #d1e1ff;
+}
+.header-menu > .item > .icon:hover{
+    border: 1px solid #0000005e;
+}
+
+
+@media (max-width: 768px) {
+    .item .name{
+        display: none;
+    }
+    .name-company{
+        font-size: 1rem;
+    }
+}
+  
+@media (max-width: 480px) {
+    .circle {
+        width: 60px;
+        height: 60px;
+        box-shadow: 0 0 6px 3px #7e7e7e;
+    }
+}
